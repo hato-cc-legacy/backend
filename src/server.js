@@ -85,6 +85,7 @@ app.delete("/dislikes/users/:id", dislikesController.destroyByUserId);
 app.delete("/dislikes/cards/:id", dislikesController.destroyByCardId);
 
 // Report Endpoints
+app.get("/cards-reports/all", reportsController.showAllReport);
 app.post("/cards-reports/:cardid/:userid", reportsController.reportByCardId);
 app.post("/comments-report/:commentid/:userid", reportsController.reportByCommentId);
 
